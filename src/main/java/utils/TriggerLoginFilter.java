@@ -43,7 +43,7 @@ public class TriggerLoginFilter implements Filter {
 		HttpSession session = req.getSession();
 		
 		
-		if (session.getAttribute("username") != null) {
+		if (session.getAttribute("username") != null&&session.getAttribute("occupation").equals("项目经理")) {
 			chain.doFilter(request, response);
 			
 		}else{

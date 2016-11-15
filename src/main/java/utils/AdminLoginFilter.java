@@ -43,7 +43,7 @@ public class AdminLoginFilter implements Filter {
 		HttpSession session = req.getSession();
 		
 		
-		if (session.getAttribute("username") != null) {
+		if (session.getAttribute("username") != null&&session.getAttribute("occupation").equals("系统管理员")) {
 			chain.doFilter(request, response);
 			
 		}else{
