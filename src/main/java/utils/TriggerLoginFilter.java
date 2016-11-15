@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet Filter implementation class TriggerLoginFilter
  */
-@WebFilter(filterName="TriggerLoginFilter", urlPatterns="/trigger.jsp")
+@WebFilter(filterName="TriggerLoginFilter", urlPatterns="/trigger")
 public class TriggerLoginFilter implements Filter {
 
     /**

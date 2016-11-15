@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet Filter implementation class SolutionLoginFilter
  */
-@WebFilter(filterName="SolutionLoginFilter", urlPatterns="/solution.jsp")
+@WebFilter(filterName="SolutionLoginFilter", urlPatterns="/solution")
 public class SolutionLoginFilter implements Filter {
 
     /**

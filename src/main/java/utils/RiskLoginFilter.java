@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet Filter implementation class LoginFilter
  */
-@WebFilter(filterName="RiskLoginFilter", urlPatterns="/riskItem.jsp")
+@WebFilter(filterName="RiskLoginFilter", urlPatterns="/riskItem")
 public class RiskLoginFilter implements Filter {
 
     /**
