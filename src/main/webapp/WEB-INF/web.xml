@@ -1,58 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+
+<web-app version="2.5" xmlns="http://Java.sun.com/xml/ns/javaee"
+
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   
-    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+
+        http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 	<servlet>
-		<servlet-name>AdminController</servlet-name>
-		<servlet-class>web.AdminController</servlet-class>
+		<servlet-name>hello</servlet-name>
+		<display-name>hello</display-name>
+		<description></description>
+		<servlet-class>vo.hello</servlet-class>
 	</servlet>
-	<servlet>
-		<servlet-name>LoginController</servlet-name>
-		<servlet-class>web.LoginController</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>RiskController</servlet-name>
-		<servlet-class>web.RiskController</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>SolutionController</servlet-name>
-		<servlet-class>web.SolutionController</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>TriggerController</servlet-name>
-		<servlet-class>web.TriggerController</servlet-class>
-	</servlet>
-	
-	
-	
-	
 	<servlet-mapping>
-		<servlet-name>AdminController</servlet-name>
-		<url-pattern>/admin</url-pattern>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>CheckServlet</servlet-name>
-		<url-pattern>/login</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>RiskController</servlet-name>
-		<url-pattern>/riskItem</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>SolutionController</servlet-name>
-		<url-pattern>/solution</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>TriggerController</servlet-name>
-		<url-pattern>/trigger</url-pattern>
-	</servlet-mapping>
-	<!-- ... -->
-	
-	
-</web-app>  
 
 
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index1.jsp</welcome-file>
+	</welcome-file-list>
 
-
+</web-app>
