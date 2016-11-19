@@ -6,7 +6,7 @@ import com.mysql.jdbc.Connection;
 
 public class MysqlConn {
     final String DBDRIVER = "com.mysql.jdbc.Driver";   
-    final String DBURL = "jdbc:mysql://localhost:3306/riskData?characterEncoding=utf8&useSSL=true"; 
+    final String DBURL = "jdbc:mysql://127.0.0.1:3306/riskData?characterEncoding=utf8&useSSL=true"; 
     final String DBUSER = "root";  
     final String DBPWD = "sonar";  
     java.sql.Connection conn = null;//数据库连接  
